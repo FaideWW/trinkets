@@ -1,0 +1,30 @@
+{
+  "name": "trinkets",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://faideww.github.io/trinkets",
+  "devDependencies": {
+    "gh-pages": "^0.11.0",
+    "react-scripts": "0.7.0"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^1.0.1",
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.1",
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-immutable-proptypes": "^2.1.0",
+    "react-redux": "^4.4.5",
+    "recompose": "^0.20.2",
+    "redux": "^3.6.0",
+    "redux-immutable": "^3.0.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  }
+}

@@ -1,0 +1,3 @@
+export const ADD_TRINKET = 'ADD_TRINKET';
+export const UPDATE_TRINKET = 'UPDATE_TRINKET';
+export const REMOVE_TRINKET = 'REMOVE_TRINKET';
