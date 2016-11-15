@@ -8,7 +8,7 @@ function ResultContainer(props) {
 }
 
 ResultContainer.propTypes = {
-  trinkets: ImmutablePropTypes.list.isRequired,
+  trinkets: ImmutablePropTypes.orderedMap.isRequired,
 };
 
 function mapStateToProps(state) {

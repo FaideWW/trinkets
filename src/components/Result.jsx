@@ -1,43 +1,35 @@
 import React, { PropTypes } from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
-import { withProps, pure, compose } from 'recompose';
+import { withProps, withHandlers, withState, pure, compose } from 'recompose';
 
-const withComputedResult = withProps(({ trinkets }) => {
-  let trinketString = '';
-
-  if (trinkets.size < 2) {
-    trinketString = 'Please add at least 2 trinkets.';
+const withComputedResult = withProps(({ trinkets, output }) => {
+  if (output === 'pairs') {
+    return { trinketString: generateTrinketPairs(trinkets.toArray()) };
+  } else if (output === 'single') {
+    return { trinketString: generateTrinketSingles(trinkets.toArray()) };
   } else {
-    trinketString = `
-# Auto-generated trinket list.  Paste this into the 'Overrides' tab.
-# Be sure to remove the trinkets from your sim profile first as a control!
-    `;
-
-    for (let i = 0; i < trinkets.size; i++) {
-      const trink1 = trinkets.get(i);
-      const trink1String = `${formatTrinketString(trink1.str)}`;
-      for (let j = i + 1; j < trinkets.size; j++) {
-        const trink2 = trinkets.get(j);
-        const trink2String = `${formatTrinketString(trink2.str)}`;
-
-        trinketString += `
-copy=${trink1.shorthand}+${trink2.shorthand}
-trinket1=${trink1String}
-trinket2=${trink2String}
-        `;
-      }
-    }
+    return { trinketString: 'Unsupported output format' };
   }
+});
 
-  return {
-    trinketString,
-  };
-})
+const withOutputFormat = withState('output', 'setOutput', 'pairs');
+
+const withOutputActions = withHandlers({
+  handleSetOutputFormat: ({ setOutput }) => e => setOutput(e.target.value),
+});
 
 function Result(props) {
   return (
     <div>
-      
+      <label className="pt-label pt-inline">
+        Output format:
+        <div className="pt-select">
+          <select onChange={props.handleSetOutputFormat}>
+            <option value="pairs">Pairs</option>
+            <option value="single">Single</option>
+          </select>
+        </div>
+      </label>
       <pre>
         {props.trinketString}
       </pre>
@@ -46,16 +38,67 @@ function Result(props) {
 }
 
 Result.propTypes = {
-  trinkets: ImmutablePropTypes.list.isRequired,
+  trinkets: ImmutablePropTypes.orderedMap.isRequired,
   trinketString: PropTypes.string,
 }
 
 const enhance = compose(
   pure,
+  withOutputFormat, 
+  withOutputActions,
   withComputedResult
 );
 
 export default enhance(Result);
+
+function generateTrinketPairs(trinkets) {
+  if (trinkets.size < 2) {
+    return 'Please add at least 2 trinkets.';
+  }
+
+  let trinketString = `
+# Auto-generated trinket list.  Paste this into the 'Overrides' tab.
+  `;
+
+  for (let i = 0; i < trinkets.length; i++) {
+    const trink1 = trinkets[i];
+    const trink1String = `${formatTrinketString(trink1.str)}`;
+    for (let j = i + 1; j < trinkets.length; j++) {
+      const trink2 = trinkets[j];
+      const trink2String = `${formatTrinketString(trink2.str)}`;
+
+      trinketString += `
+copy=${trink1.shorthand}+${trink2.shorthand}
+trinket1=${trink1String}
+trinket2=${trink2String}
+      `;
+    }
+  }
+
+  return trinketString;
+}
+
+function generateTrinketSingles(trinkets) {
+  if (trinkets.size < 1) {
+    return 'Please add at least 1 trinkets.';
+  }
+
+  let trinketString = `
+# Auto-generated trinket list.  Paste this into the 'Overrides' tab.
+  `;
+
+  for (let i = 0; i < trinkets.length; i++) {
+    const trink = trinkets[i];
+    const trinkString = `${formatTrinketString(trink.str)}`;
+
+    trinketString += `
+copy=${trink.shorthand}
+trinket1=${trinkString}
+    `;
+  }
+
+  return trinketString;
+}
 
 function formatTrinketString(str) {
   const wowheadRegex = /wowhead.com\/item=(\d+)\/([^&]+)(?:&bonus=([:\d]+))?/g;

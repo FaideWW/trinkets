@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import ListContainer from './containers/ListContainer';
 import ResultContainer from './containers/ResultContainer';
 import './App.css';
@@ -9,8 +8,10 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h1>Faide's Trinket Comparison Generator</h1>
+          <p>
+            How to use: Add trinkets to the list on the left.  Copy the generated output on the right into SimulationCraft's <code>Overrides</code> tab.  
+          </p>
         </div>
         <div className="column">
           <ListContainer />

@@ -10,7 +10,7 @@ function ListContainer({ trinkets, actions }) {
 }
 
 ListContainer.propTypes = {
-  trinkets: ImmutablePropTypes.list.isRequired,
+  trinkets: ImmutablePropTypes.orderedMap.isRequired,
   actions: PropTypes.objectOf(PropTypes.func),
 };
 

@@ -26,8 +26,8 @@ function List(props) {
       </thead>
       <tbody>
         <Item isInserter trinket={defaultInputs} trinketIndex={props.trinkets.length} actions={props.actions} />
-        {props.trinkets.map((trinket, index) => (
-          <Item trinket={trinket} key={index} trinketIndex={index} actions={props.actions} />
+        {props.trinkets.toArray().map((trinket) => (
+          <Item trinket={trinket} key={trinket.id} trinketIndex={trinket.id} actions={props.actions} />
         ))}
       </tbody>
     </table>
@@ -36,7 +36,7 @@ function List(props) {
 }
 
 List.propTypes = {
-  trinkets: ImmutablePropTypes.list.isRequired,
+  trinkets: ImmutablePropTypes.orderedMap.isRequired,
   actions: PropTypes.objectOf(PropTypes.func),
 };
 

@@ -19,14 +19,14 @@ const withActions = withHandlers({
       setName('');
       setStr('');
     } else {
-      actions.updateTrinket({ index: trinketIndex, shorthand: name.trim(), str: str.trim() });
+      actions.updateTrinket({ id: trinketIndex, shorthand: name.trim(), str: str.trim() });
     }
 
     setDirty(false);
   },
   handleRemoveTrinket: ({ actions, trinketIndex }) => e => {
     e.preventDefault();
-    actions.removeTrinket({ index: trinketIndex });
+    actions.removeTrinket({ id: trinketIndex });
   },
   handleSetName: ({ name, setName, setDirty }) => e => {
     e.preventDefault();
@@ -46,7 +46,6 @@ function Item(props) {
     actions = (
       <button 
         className="pt-button pt-intent-primary pt-icon-add" 
-        role="submit" 
         onClick={props.handleDoFormAction}
       >
         Add Trinket
@@ -58,14 +57,12 @@ function Item(props) {
         <Tooltip content="Update Trinket" position={Position.BOTTOM}>
           <button 
             className="pt-button pt-intent-success pt-icon-small-tick" 
-            role="submit" 
             onClick={props.handleDoFormAction}
           />
         </Tooltip>
         <Tooltip content="Remove Trinket" position={Position.BOTTOM}>
           <button 
             className="pt-button pt-intent-danger pt-icon-small-cross" 
-            role="button" 
             onClick={props.handleRemoveTrinket}
           />
         </Tooltip>
@@ -90,7 +87,7 @@ function Item(props) {
 Item.propTypes = {
   isInserter: PropTypes.bool,
   trinket: PropTypes.object,
-  trinketIndex: PropTypes.number,
+  trinketIndex: PropTypes.string,
   name: PropTypes.string.isRequired,
   setName: PropTypes.func.isRequired,
   str: PropTypes.string.isRequired,
