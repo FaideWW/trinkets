@@ -7,7 +7,7 @@ const withHasChanges = withState('dirty', 'setDirty', false);
 const withName = withState('name', 'setName', ({ trinket }) => trinket.shorthand);
 const withString = withState('str', 'setStr', ({ trinket }) => trinket.str);
 const withActions = withHandlers({
-  handleDoFormAction: ({ isInserter, trinketIndex, actions, name, str, setName, setStr, setDirty }) => e => {
+  handleDoFormAction: ({ isInserter, trinket, trinketIndex, actions, name, str, setName, setStr, setDirty }) => e => {
     e.preventDefault();
     console.log(actions);
     if (isInserter) {
@@ -19,7 +19,14 @@ const withActions = withHandlers({
       setName('');
       setStr('');
     } else {
+      if (!name.trim().length || !str.trim().length) {
+        setName(trinket.shorthand);
+        setStr(trinket.str);
+        return;
+      }
       actions.updateTrinket({ id: trinketIndex, shorthand: name.trim(), str: str.trim() });
+      setName(name.trim());
+      setStr(str.trim());
     }
 
     setDirty(false);

@@ -52,7 +52,7 @@ const enhance = compose(
 export default enhance(Result);
 
 function generateTrinketPairs(trinkets) {
-  if (trinkets.size < 2) {
+  if (trinkets.length < 2) {
     return 'Please add at least 2 trinkets.';
   }
 
@@ -79,7 +79,7 @@ trinket2=${trink2String}
 }
 
 function generateTrinketSingles(trinkets) {
-  if (trinkets.size < 1) {
+  if (trinkets.length < 1) {
     return 'Please add at least 1 trinkets.';
   }
 
