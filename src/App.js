@@ -9,8 +9,15 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h1>Faide's Trinket Comparison Generator</h1>
+          <hr />
           <p>
-            How to use: Add trinkets to the list on the left.  Copy the generated output on the right into SimulationCraft's <code>Overrides</code> tab.  
+            How to use: add trinkets to the list on the left. Wowhead URLs will be auto-parsed into SimC strings, but you can also just paste in your own trinket strings. 
+          </p> 
+          <p>
+            Copy the generated output on the right into SimulationCraft's <code>Overrides</code> tab. Use 'Pairs' to generate trinket combinations, or 'Single' to compare individual trinkets.
+          </p>
+          <p>
+            <a href="https://github.com/FaideWW/trinkets/issues">Report issues/request features here.</a>
           </p>
         </div>
         <div className="column">
