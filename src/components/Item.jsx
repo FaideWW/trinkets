@@ -79,7 +79,7 @@ function Item(props) {
   return (
       <tr>
         <td>
-          <input className="pt-input" placeholder="e.g. 'memento'" value={props.name} onChange={props.handleSetName} />
+          <input className="pt-input" placeholder="e.g. 'memento_880'" value={props.name} onChange={props.handleSetName} />
         </td>
         <td>
           <input className="pt-input" placeholder="e.g. 'http://www.wowhead.com/item=133644/memento-of-angerboda&bonus=1826'" value={props.str} onChange={props.handleSetString} />
