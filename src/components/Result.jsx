@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { withProps, withHandlers, withState, pure, compose } from 'recompose';
+import { parseWowheadURL } from '../util';
 
 const withComputedResult = withProps(({ trinkets, output }) => {
   if (output === 'pairs') {
@@ -44,7 +45,7 @@ Result.propTypes = {
 
 const enhance = compose(
   pure,
-  withOutputFormat, 
+  withOutputFormat,
   withOutputActions,
   withComputedResult
 );
@@ -101,14 +102,12 @@ trinket1=${trinkString}
 }
 
 function formatTrinketString(str) {
-  const wowheadRegex = /wowhead.com\/item=(\d+)\/([^&]+)(?:&bonus=([:\d]+))?/g;
-
-  const wowheadMatch = wowheadRegex.exec(str);
-  if (!wowheadMatch.length || wowheadMatch.length < 3) {
+  const wowheadMatch = parseWowheadURL(str);
+  if (!wowheadMatch || !wowheadMatch.length || wowheadMatch.length < 3) {
     return str;
   }
 
-  const trinketName = wowheadMatch[2].split('-').join('_');
+  // const trinketName = wowheadMatch[2].split('-').join('_');
   const trinketID = wowheadMatch[1];
   const trinketBonus = wowheadMatch[3];
   let trinketBonusStr = '';
@@ -117,5 +116,5 @@ function formatTrinketString(str) {
     trinketBonusStr = `,bonus_id=${trinketBonus.split(':').join('/')}`;
   }
 
-  return `${trinketName},id=${trinketID}${trinketBonusStr}`;
+  return `,id=${trinketID}${trinketBonusStr}`;
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ImporterContainer from './containers/ImporterContainer';
 import ListContainer from './containers/ListContainer';
 import ResultContainer from './containers/ResultContainer';
 import './App.css';
@@ -11,8 +12,8 @@ class App extends Component {
           <h1>Faide's Trinket Comparison Generator</h1>
           <hr />
           <p>
-            How to use: add trinkets to the list on the left. Wowhead URLs will be auto-parsed into SimC strings, but you can also just paste in your own trinket strings. 
-          </p> 
+            How to use: add trinkets to the list on the left. Wowhead URLs will be auto-parsed into SimC strings, but you can also just paste in your own trinket strings.
+          </p>
           <p>
             Copy the generated output on the right into SimulationCraft's <code>Overrides</code> tab. Use 'Pairs' to generate trinket combinations, or 'Single' to compare individual trinkets.
           </p>
@@ -21,6 +22,7 @@ class App extends Component {
           </p>
         </div>
         <div className="column">
+          <ImporterContainer />
           <ListContainer />
         </div>
         <div className="column result">

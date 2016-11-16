@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import { persistStore } from 'redux-persist-immutable';
 import trinketsApp from './store/reducers';
 import difference from 'lodash/difference';
-import App from './App';
+import App from './App.jsx';
 import './index.css';
 import '../node_modules/@blueprintjs/core/dist/blueprint.css';
 
