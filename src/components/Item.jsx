@@ -6,6 +6,9 @@ import './Item.css';
 const withHasChanges = withState('dirty', 'setDirty', false);
 const withName = withState('name', 'setName', ({ trinket }) => trinket.shorthand);
 const withString = withState('str', 'setStr', ({ trinket }) => trinket.str);
+const withRangeMin = withState('rangeMin', 'setRangeMin', ({ trinket }) => trinket.rangeMin);
+const withRangeMax = withState('rangeMax', 'setRangeMax', ({ trinket }) => trinket.rangeMax);
+
 const withActions = withHandlers({
   handleDoFormAction: ({ isInserter, trinket, trinketIndex, actions, name, str, setName, setStr, setDirty }) => e => {
     e.preventDefault();
@@ -51,8 +54,8 @@ function Item(props) {
   let actions = null;
   if (props.isInserter) {
     actions = (
-      <button 
-        className="pt-button pt-intent-primary pt-icon-add" 
+      <button
+        className="pt-button pt-intent-primary pt-icon-add"
         onClick={props.handleDoFormAction}
       >
         Add Trinket
@@ -62,14 +65,14 @@ function Item(props) {
     actions = (
       <div className="pt-button-group">
         <Tooltip content="Update Trinket" position={Position.BOTTOM}>
-          <button 
-            className="pt-button pt-intent-success pt-icon-small-tick" 
+          <button
+            className="pt-button pt-intent-success pt-icon-small-tick"
             onClick={props.handleDoFormAction}
           />
         </Tooltip>
         <Tooltip content="Remove Trinket" position={Position.BOTTOM}>
-          <button 
-            className="pt-button pt-intent-danger pt-icon-small-cross" 
+          <button
+            className="pt-button pt-intent-danger pt-icon-small-cross"
             onClick={props.handleRemoveTrinket}
           />
         </Tooltip>
@@ -83,6 +86,12 @@ function Item(props) {
         </td>
         <td>
           <input className="pt-input" placeholder="e.g. 'http://www.wowhead.com/item=133644/memento-of-angerboda&bonus=1826'" value={props.str} onChange={props.handleSetString} />
+        </td>
+        <td>
+          <input className="pt-input pt-fill" placeholder="865" value={props.rangeMin} onChange={props.handleSetRangeMin} />
+        </td>
+        <td>
+          <input className="pt-input pt-fill" placeholder="920" value={props.rangeMax} onChange={props.handleSetRangeMax} />
         </td>
         <td>
           {actions}
@@ -110,6 +119,8 @@ const enhance = compose(
   pure,
   withName,
   withString,
+  withRangeMin,
+  withRangeMax,
   withHasChanges,
   withActions,
 );

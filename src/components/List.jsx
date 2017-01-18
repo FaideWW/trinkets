@@ -21,6 +21,8 @@ function List(props) {
         <tr>
           <th>Shorthand</th>
           <th>SimC String or Wowhead URL</th>
+          <th>Minimum ilvl</th>
+          <th>Maximum ilvl</th>
           <th>Actions</th>
         </tr>
       </thead>

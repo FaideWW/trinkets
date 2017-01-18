@@ -1,6 +1,6 @@
 import { OrderedMap } from 'immutable';
-import { 
-  ADD_TRINKET, 
+import {
+  ADD_TRINKET,
   UPDATE_TRINKET,
   REMOVE_TRINKET,
 } from './constants';
@@ -24,17 +24,17 @@ export default function trinketsReducer(state = initialState, action) {
   }
 }
 
-function addTrinket(state, { shorthand, str }) {
+function addTrinket(state, { shorthand, str, rangeMin, rangeMax }) {
   let id;
   do {
     id = `${Date.now()}`;
   } while (state.get(id));
 
-  return state.set(id, { shorthand, str, id })
+  return state.set(id, { shorthand, str, id, rangeMin, rangeMax })
 }
 
-function updateTrinket(state, { id, shorthand, str }) {
-  return state.set(id, { shorthand, str, id });
+function updateTrinket(state, { id, shorthand, str, rangeMin, rangeMax }) {
+  return state.set(id, { shorthand, str, id, rangeMin, rangeMax });
 }
 
 function removeTrinket(state, { id }) {
