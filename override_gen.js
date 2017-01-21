@@ -5,6 +5,13 @@ const MIN_ILVL = 865;
 const MAX_ILVL = 920;
 const STEP = 5;
 
+const STAT_STICK_ID = 134203;
+
+const STAT_STICK_BONUS_CRIT = 603;
+const STAT_STICK_BONUS_HASTE = 604;
+const STAT_STICK_BONUS_MASTERY = 605;
+const STAT_STICK_BONUS_VERS = 607;
+
 console.log('generating override...');
 let override = `
 # Auto-generated trinket override by Faide:
@@ -15,12 +22,16 @@ trinket1=
 trinket2=
 `;
 
+addStatSticks(trinkets);
+
 each(trinkets, (trinket, trinketID) => {
   for (let ilvl = MIN_ILVL; ilvl <= MAX_ILVL; ilvl += STEP) {
+    const id = trinket.trinketIDOverride || trinketID;
+    const bonusID = trinket.bonusID || '';
     override += (
 `
 copy=${slugTrinketName(trinket.name_enus)}_${ilvl}
-trinket1=,id=${trinketID},ilevel=${ilvl}
+trinket1=,id=${id},bonus_id=${bonusID},ilevel=${ilvl}
 `
     );
   }
@@ -29,7 +40,28 @@ trinket1=,id=${trinketID},ilevel=${ilvl}
 fs.writeFileSync('715_trinket_override.txt', override);
 console.log('done!');
 
-
+function addStatSticks(src) {
+  src[STAT_STICK_ID + '_crit'] = {
+    name_enus: 'Stat_Stick_Crit',
+    trinketIDOverride: STAT_STICK_ID,
+    bonusID: STAT_STICK_BONUS_CRIT
+  };
+  src[STAT_STICK_ID + '_haste'] = {
+    name_enus: 'Stat_Stick_Haste',
+    trinketIDOverride: STAT_STICK_ID,
+    bonusID: STAT_STICK_BONUS_HASTE
+  };
+  src[STAT_STICK_ID + '_mastery'] = {
+    name_enus: 'Stat_Stick_Mastery',
+    trinketIDOverride: STAT_STICK_ID,
+    bonusID: STAT_STICK_BONUS_MASTERY
+  };
+  src[STAT_STICK_ID + '_vers'] = {
+    name_enus: 'Stat_Stick_Vers',
+    trinketIDOverride: STAT_STICK_ID,
+    bonusID: STAT_STICK_BONUS_VERS
+  };
+}
 
 function each(src, exec) {
 

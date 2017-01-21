@@ -5,7 +5,8 @@
   "homepage": "https://faideww.github.io/trinkets",
   "devDependencies": {
     "gh-pages": "^0.11.0",
-    "react-scripts": "0.7.0"
+    "react-scripts": "0.7.0",
+    "yargs": "^6.6.0"
   },
   "dependencies": {
     "@blueprintjs/core": "^1.0.1",
