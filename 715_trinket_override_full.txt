@@ -48,8 +48,80 @@ trinket1=,id=121808,bonus_id=,ilevel=925
 copy=Darkmoon_Deck_Dominion_865
 trinket1=,id=128705,bonus_id=,ilevel=865
 
+copy=Darkmoon_Deck_Dominion_870
+trinket1=,id=128705,bonus_id=,ilevel=870
+
+copy=Darkmoon_Deck_Dominion_875
+trinket1=,id=128705,bonus_id=,ilevel=875
+
+copy=Darkmoon_Deck_Dominion_880
+trinket1=,id=128705,bonus_id=,ilevel=880
+
+copy=Darkmoon_Deck_Dominion_885
+trinket1=,id=128705,bonus_id=,ilevel=885
+
+copy=Darkmoon_Deck_Dominion_890
+trinket1=,id=128705,bonus_id=,ilevel=890
+
+copy=Darkmoon_Deck_Dominion_895
+trinket1=,id=128705,bonus_id=,ilevel=895
+
+copy=Darkmoon_Deck_Dominion_900
+trinket1=,id=128705,bonus_id=,ilevel=900
+
+copy=Darkmoon_Deck_Dominion_905
+trinket1=,id=128705,bonus_id=,ilevel=905
+
+copy=Darkmoon_Deck_Dominion_910
+trinket1=,id=128705,bonus_id=,ilevel=910
+
+copy=Darkmoon_Deck_Dominion_915
+trinket1=,id=128705,bonus_id=,ilevel=915
+
+copy=Darkmoon_Deck_Dominion_920
+trinket1=,id=128705,bonus_id=,ilevel=920
+
+copy=Darkmoon_Deck_Dominion_925
+trinket1=,id=128705,bonus_id=,ilevel=925
+
 copy=Darkmoon_Deck_Immortality_865
 trinket1=,id=128711,bonus_id=,ilevel=865
+
+copy=Darkmoon_Deck_Immortality_870
+trinket1=,id=128711,bonus_id=,ilevel=870
+
+copy=Darkmoon_Deck_Immortality_875
+trinket1=,id=128711,bonus_id=,ilevel=875
+
+copy=Darkmoon_Deck_Immortality_880
+trinket1=,id=128711,bonus_id=,ilevel=880
+
+copy=Darkmoon_Deck_Immortality_885
+trinket1=,id=128711,bonus_id=,ilevel=885
+
+copy=Darkmoon_Deck_Immortality_890
+trinket1=,id=128711,bonus_id=,ilevel=890
+
+copy=Darkmoon_Deck_Immortality_895
+trinket1=,id=128711,bonus_id=,ilevel=895
+
+copy=Darkmoon_Deck_Immortality_900
+trinket1=,id=128711,bonus_id=,ilevel=900
+
+copy=Darkmoon_Deck_Immortality_905
+trinket1=,id=128711,bonus_id=,ilevel=905
+
+copy=Darkmoon_Deck_Immortality_910
+trinket1=,id=128711,bonus_id=,ilevel=910
+
+copy=Darkmoon_Deck_Immortality_915
+trinket1=,id=128711,bonus_id=,ilevel=915
+
+copy=Darkmoon_Deck_Immortality_920
+trinket1=,id=128711,bonus_id=,ilevel=920
+
+copy=Darkmoon_Deck_Immortality_925
+trinket1=,id=128711,bonus_id=,ilevel=925
 
 copy=Eye_of_Skovald_865
 trinket1=,id=133641,bonus_id=,ilevel=865
@@ -1809,525 +1881,200 @@ trinket1=,id=141537,bonus_id=,ilevel=925
 copy=Arans_Relaxing_Ruby_865
 trinket1=,id=142157,bonus_id=,ilevel=865
 
-copy=Arans_Relaxing_Ruby_865_Chest
-trinket1=,id=142157,bonus_id=,ilevel=865
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
-
 copy=Arans_Relaxing_Ruby_870
 trinket1=,id=142157,bonus_id=,ilevel=870
-chest=
-
-copy=Arans_Relaxing_Ruby_870_Chest
-trinket1=,id=142157,bonus_id=,ilevel=870
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_875
 trinket1=,id=142157,bonus_id=,ilevel=875
-chest=
-
-copy=Arans_Relaxing_Ruby_875_Chest
-trinket1=,id=142157,bonus_id=,ilevel=875
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_880
 trinket1=,id=142157,bonus_id=,ilevel=880
-chest=
-
-copy=Arans_Relaxing_Ruby_880_Chest
-trinket1=,id=142157,bonus_id=,ilevel=880
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_885
 trinket1=,id=142157,bonus_id=,ilevel=885
-chest=
-
-copy=Arans_Relaxing_Ruby_885_Chest
-trinket1=,id=142157,bonus_id=,ilevel=885
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_890
 trinket1=,id=142157,bonus_id=,ilevel=890
-chest=
-
-copy=Arans_Relaxing_Ruby_890_Chest
-trinket1=,id=142157,bonus_id=,ilevel=890
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_895
 trinket1=,id=142157,bonus_id=,ilevel=895
-chest=
-
-copy=Arans_Relaxing_Ruby_895_Chest
-trinket1=,id=142157,bonus_id=,ilevel=895
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_900
 trinket1=,id=142157,bonus_id=,ilevel=900
-chest=
-
-copy=Arans_Relaxing_Ruby_900_Chest
-trinket1=,id=142157,bonus_id=,ilevel=900
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_905
 trinket1=,id=142157,bonus_id=,ilevel=905
-chest=
-
-copy=Arans_Relaxing_Ruby_905_Chest
-trinket1=,id=142157,bonus_id=,ilevel=905
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_910
 trinket1=,id=142157,bonus_id=,ilevel=910
-chest=
-
-copy=Arans_Relaxing_Ruby_910_Chest
-trinket1=,id=142157,bonus_id=,ilevel=910
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_915
 trinket1=,id=142157,bonus_id=,ilevel=915
-chest=
-
-copy=Arans_Relaxing_Ruby_915_Chest
-trinket1=,id=142157,bonus_id=,ilevel=915
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_920
 trinket1=,id=142157,bonus_id=,ilevel=920
-chest=
-
-copy=Arans_Relaxing_Ruby_920_Chest
-trinket1=,id=142157,bonus_id=,ilevel=920
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Arans_Relaxing_Ruby_925
 trinket1=,id=142157,bonus_id=,ilevel=925
-chest=
-
-copy=Arans_Relaxing_Ruby_925_Chest
-trinket1=,id=142157,bonus_id=,ilevel=925
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_865
 trinket1=,id=142159,bonus_id=,ilevel=865
-chest=
-
-copy=Bloodstained_Handkerchief_865_Chest
-trinket1=,id=142159,bonus_id=,ilevel=865
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_870
 trinket1=,id=142159,bonus_id=,ilevel=870
-chest=
-
-copy=Bloodstained_Handkerchief_870_Chest
-trinket1=,id=142159,bonus_id=,ilevel=870
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_875
 trinket1=,id=142159,bonus_id=,ilevel=875
-chest=
-
-copy=Bloodstained_Handkerchief_875_Chest
-trinket1=,id=142159,bonus_id=,ilevel=875
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_880
 trinket1=,id=142159,bonus_id=,ilevel=880
-chest=
-
-copy=Bloodstained_Handkerchief_880_Chest
-trinket1=,id=142159,bonus_id=,ilevel=880
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_885
 trinket1=,id=142159,bonus_id=,ilevel=885
-chest=
-
-copy=Bloodstained_Handkerchief_885_Chest
-trinket1=,id=142159,bonus_id=,ilevel=885
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_890
 trinket1=,id=142159,bonus_id=,ilevel=890
-chest=
-
-copy=Bloodstained_Handkerchief_890_Chest
-trinket1=,id=142159,bonus_id=,ilevel=890
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_895
 trinket1=,id=142159,bonus_id=,ilevel=895
-chest=
-
-copy=Bloodstained_Handkerchief_895_Chest
-trinket1=,id=142159,bonus_id=,ilevel=895
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_900
 trinket1=,id=142159,bonus_id=,ilevel=900
-chest=
-
-copy=Bloodstained_Handkerchief_900_Chest
-trinket1=,id=142159,bonus_id=,ilevel=900
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_905
 trinket1=,id=142159,bonus_id=,ilevel=905
-chest=
-
-copy=Bloodstained_Handkerchief_905_Chest
-trinket1=,id=142159,bonus_id=,ilevel=905
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_910
 trinket1=,id=142159,bonus_id=,ilevel=910
-chest=
-
-copy=Bloodstained_Handkerchief_910_Chest
-trinket1=,id=142159,bonus_id=,ilevel=910
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_915
 trinket1=,id=142159,bonus_id=,ilevel=915
-chest=
-
-copy=Bloodstained_Handkerchief_915_Chest
-trinket1=,id=142159,bonus_id=,ilevel=915
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_920
 trinket1=,id=142159,bonus_id=,ilevel=920
-chest=
-
-copy=Bloodstained_Handkerchief_920_Chest
-trinket1=,id=142159,bonus_id=,ilevel=920
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Bloodstained_Handkerchief_925
 trinket1=,id=142159,bonus_id=,ilevel=925
-chest=
-
-copy=Bloodstained_Handkerchief_925_Chest
-trinket1=,id=142159,bonus_id=,ilevel=925
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_865
 trinket1=,id=142160,bonus_id=,ilevel=865
-chest=
-
-copy=Mrrgrias_Favor_865_Chest
-trinket1=,id=142160,bonus_id=,ilevel=865
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_870
 trinket1=,id=142160,bonus_id=,ilevel=870
-chest=
-
-copy=Mrrgrias_Favor_870_Chest
-trinket1=,id=142160,bonus_id=,ilevel=870
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_875
 trinket1=,id=142160,bonus_id=,ilevel=875
-chest=
-
-copy=Mrrgrias_Favor_875_Chest
-trinket1=,id=142160,bonus_id=,ilevel=875
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_880
 trinket1=,id=142160,bonus_id=,ilevel=880
-chest=
-
-copy=Mrrgrias_Favor_880_Chest
-trinket1=,id=142160,bonus_id=,ilevel=880
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_885
 trinket1=,id=142160,bonus_id=,ilevel=885
-chest=
-
-copy=Mrrgrias_Favor_885_Chest
-trinket1=,id=142160,bonus_id=,ilevel=885
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_890
 trinket1=,id=142160,bonus_id=,ilevel=890
-chest=
-
-copy=Mrrgrias_Favor_890_Chest
-trinket1=,id=142160,bonus_id=,ilevel=890
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_895
 trinket1=,id=142160,bonus_id=,ilevel=895
-chest=
-
-copy=Mrrgrias_Favor_895_Chest
-trinket1=,id=142160,bonus_id=,ilevel=895
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_900
 trinket1=,id=142160,bonus_id=,ilevel=900
-chest=
-
-copy=Mrrgrias_Favor_900_Chest
-trinket1=,id=142160,bonus_id=,ilevel=900
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_905
 trinket1=,id=142160,bonus_id=,ilevel=905
-chest=
-
-copy=Mrrgrias_Favor_905_Chest
-trinket1=,id=142160,bonus_id=,ilevel=905
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_910
 trinket1=,id=142160,bonus_id=,ilevel=910
-chest=
-
-copy=Mrrgrias_Favor_910_Chest
-trinket1=,id=142160,bonus_id=,ilevel=910
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_915
 trinket1=,id=142160,bonus_id=,ilevel=915
-chest=
-
-copy=Mrrgrias_Favor_915_Chest
-trinket1=,id=142160,bonus_id=,ilevel=915
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_920
 trinket1=,id=142160,bonus_id=,ilevel=920
-chest=
-
-copy=Mrrgrias_Favor_920_Chest
-trinket1=,id=142160,bonus_id=,ilevel=920
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Mrrgrias_Favor_925
 trinket1=,id=142160,bonus_id=,ilevel=925
-chest=
-
-copy=Mrrgrias_Favor_925_Chest
-trinket1=,id=142160,bonus_id=,ilevel=925
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_865
 trinket1=,id=142164,bonus_id=,ilevel=865
-chest=
-
-copy=Toe_Knees_Promise_865_Chest
-trinket1=,id=142164,bonus_id=,ilevel=865
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_870
 trinket1=,id=142164,bonus_id=,ilevel=870
-chest=
-
-copy=Toe_Knees_Promise_870_Chest
-trinket1=,id=142164,bonus_id=,ilevel=870
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_875
 trinket1=,id=142164,bonus_id=,ilevel=875
-chest=
-
-copy=Toe_Knees_Promise_875_Chest
-trinket1=,id=142164,bonus_id=,ilevel=875
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_880
 trinket1=,id=142164,bonus_id=,ilevel=880
-chest=
-
-copy=Toe_Knees_Promise_880_Chest
-trinket1=,id=142164,bonus_id=,ilevel=880
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_885
 trinket1=,id=142164,bonus_id=,ilevel=885
-chest=
-
-copy=Toe_Knees_Promise_885_Chest
-trinket1=,id=142164,bonus_id=,ilevel=885
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_890
 trinket1=,id=142164,bonus_id=,ilevel=890
-chest=
-
-copy=Toe_Knees_Promise_890_Chest
-trinket1=,id=142164,bonus_id=,ilevel=890
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_895
 trinket1=,id=142164,bonus_id=,ilevel=895
-chest=
-
-copy=Toe_Knees_Promise_895_Chest
-trinket1=,id=142164,bonus_id=,ilevel=895
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_900
 trinket1=,id=142164,bonus_id=,ilevel=900
-chest=
-
-copy=Toe_Knees_Promise_900_Chest
-trinket1=,id=142164,bonus_id=,ilevel=900
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_905
 trinket1=,id=142164,bonus_id=,ilevel=905
-chest=
-
-copy=Toe_Knees_Promise_905_Chest
-trinket1=,id=142164,bonus_id=,ilevel=905
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_910
 trinket1=,id=142164,bonus_id=,ilevel=910
-chest=
-
-copy=Toe_Knees_Promise_910_Chest
-trinket1=,id=142164,bonus_id=,ilevel=910
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_915
 trinket1=,id=142164,bonus_id=,ilevel=915
-chest=
-
-copy=Toe_Knees_Promise_915_Chest
-trinket1=,id=142164,bonus_id=,ilevel=915
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_920
 trinket1=,id=142164,bonus_id=,ilevel=920
-chest=
-
-copy=Toe_Knees_Promise_920_Chest
-trinket1=,id=142164,bonus_id=,ilevel=920
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Toe_Knees_Promise_925
 trinket1=,id=142164,bonus_id=,ilevel=925
-chest=
-
-copy=Toe_Knees_Promise_925_Chest
-trinket1=,id=142164,bonus_id=,ilevel=925
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_865
 trinket1=,id=142165,bonus_id=,ilevel=865
-chest=
-
-copy=Deteriorated_Construct_Core_865_Chest
-trinket1=,id=142165,bonus_id=,ilevel=865
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_870
 trinket1=,id=142165,bonus_id=,ilevel=870
-chest=
-
-copy=Deteriorated_Construct_Core_870_Chest
-trinket1=,id=142165,bonus_id=,ilevel=870
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_875
 trinket1=,id=142165,bonus_id=,ilevel=875
-chest=
-
-copy=Deteriorated_Construct_Core_875_Chest
-trinket1=,id=142165,bonus_id=,ilevel=875
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_880
 trinket1=,id=142165,bonus_id=,ilevel=880
-chest=
-
-copy=Deteriorated_Construct_Core_880_Chest
-trinket1=,id=142165,bonus_id=,ilevel=880
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_885
 trinket1=,id=142165,bonus_id=,ilevel=885
-chest=
-
-copy=Deteriorated_Construct_Core_885_Chest
-trinket1=,id=142165,bonus_id=,ilevel=885
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_890
 trinket1=,id=142165,bonus_id=,ilevel=890
-chest=
-
-copy=Deteriorated_Construct_Core_890_Chest
-trinket1=,id=142165,bonus_id=,ilevel=890
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_895
 trinket1=,id=142165,bonus_id=,ilevel=895
-chest=
-
-copy=Deteriorated_Construct_Core_895_Chest
-trinket1=,id=142165,bonus_id=,ilevel=895
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_900
 trinket1=,id=142165,bonus_id=,ilevel=900
-chest=
-
-copy=Deteriorated_Construct_Core_900_Chest
-trinket1=,id=142165,bonus_id=,ilevel=900
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_905
 trinket1=,id=142165,bonus_id=,ilevel=905
-chest=
-
-copy=Deteriorated_Construct_Core_905_Chest
-trinket1=,id=142165,bonus_id=,ilevel=905
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_910
 trinket1=,id=142165,bonus_id=,ilevel=910
-chest=
-
-copy=Deteriorated_Construct_Core_910_Chest
-trinket1=,id=142165,bonus_id=,ilevel=910
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_915
 trinket1=,id=142165,bonus_id=,ilevel=915
-chest=
-
-copy=Deteriorated_Construct_Core_915_Chest
-trinket1=,id=142165,bonus_id=,ilevel=915
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_920
 trinket1=,id=142165,bonus_id=,ilevel=920
-chest=
-
-copy=Deteriorated_Construct_Core_920_Chest
-trinket1=,id=142165,bonus_id=,ilevel=920
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Deteriorated_Construct_Core_925
 trinket1=,id=142165,bonus_id=,ilevel=925
-chest=
-
-copy=Deteriorated_Construct_Core_925_Chest
-trinket1=,id=142165,bonus_id=,ilevel=925
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Ethereal_Urn_865
 trinket1=,id=142166,bonus_id=,ilevel=865
-chest=
 
 copy=Ethereal_Urn_870
 trinket1=,id=142166,bonus_id=,ilevel=870
@@ -2368,109 +2115,83 @@ trinket1=,id=142166,bonus_id=,ilevel=925
 copy=Eye_of_Command_865
 trinket1=,id=142167,bonus_id=,ilevel=865
 
-copy=Eye_of_Command_865_Chest
-trinket1=,id=142167,bonus_id=,ilevel=865
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
-
 copy=Eye_of_Command_870
 trinket1=,id=142167,bonus_id=,ilevel=870
-chest=
-
-copy=Eye_of_Command_870_Chest
-trinket1=,id=142167,bonus_id=,ilevel=870
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_875
 trinket1=,id=142167,bonus_id=,ilevel=875
-chest=
-
-copy=Eye_of_Command_875_Chest
-trinket1=,id=142167,bonus_id=,ilevel=875
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_880
 trinket1=,id=142167,bonus_id=,ilevel=880
-chest=
-
-copy=Eye_of_Command_880_Chest
-trinket1=,id=142167,bonus_id=,ilevel=880
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_885
 trinket1=,id=142167,bonus_id=,ilevel=885
-chest=
-
-copy=Eye_of_Command_885_Chest
-trinket1=,id=142167,bonus_id=,ilevel=885
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_890
 trinket1=,id=142167,bonus_id=,ilevel=890
-chest=
-
-copy=Eye_of_Command_890_Chest
-trinket1=,id=142167,bonus_id=,ilevel=890
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_895
 trinket1=,id=142167,bonus_id=,ilevel=895
-chest=
-
-copy=Eye_of_Command_895_Chest
-trinket1=,id=142167,bonus_id=,ilevel=895
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_900
 trinket1=,id=142167,bonus_id=,ilevel=900
-chest=
-
-copy=Eye_of_Command_900_Chest
-trinket1=,id=142167,bonus_id=,ilevel=900
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_905
 trinket1=,id=142167,bonus_id=,ilevel=905
-chest=
-
-copy=Eye_of_Command_905_Chest
-trinket1=,id=142167,bonus_id=,ilevel=905
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_910
 trinket1=,id=142167,bonus_id=,ilevel=910
-chest=
-
-copy=Eye_of_Command_910_Chest
-trinket1=,id=142167,bonus_id=,ilevel=910
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_915
 trinket1=,id=142167,bonus_id=,ilevel=915
-chest=
-
-copy=Eye_of_Command_915_Chest
-trinket1=,id=142167,bonus_id=,ilevel=915
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_920
 trinket1=,id=142167,bonus_id=,ilevel=920
-chest=
-
-copy=Eye_of_Command_920_Chest
-trinket1=,id=142167,bonus_id=,ilevel=920
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
 
 copy=Eye_of_Command_925
 trinket1=,id=142167,bonus_id=,ilevel=925
-chest=
 
-copy=Eye_of_Command_925_Chest
-trinket1=,id=142167,bonus_id=,ilevel=925
-chest=harness_of_smoldering_betrayal,id=142203,bonus_id=0,stats=0agi_0crit_0mastery_0haste_0versatility
+copy=Eye_of_Guarm_865
+trinket1=,id=142506,bonus_id=,ilevel=865
+
+copy=Eye_of_Guarm_870
+trinket1=,id=142506,bonus_id=,ilevel=870
+
+copy=Eye_of_Guarm_875
+trinket1=,id=142506,bonus_id=,ilevel=875
+
+copy=Eye_of_Guarm_880
+trinket1=,id=142506,bonus_id=,ilevel=880
+
+copy=Eye_of_Guarm_885
+trinket1=,id=142506,bonus_id=,ilevel=885
+
+copy=Eye_of_Guarm_890
+trinket1=,id=142506,bonus_id=,ilevel=890
+
+copy=Eye_of_Guarm_895
+trinket1=,id=142506,bonus_id=,ilevel=895
+
+copy=Eye_of_Guarm_900
+trinket1=,id=142506,bonus_id=,ilevel=900
+
+copy=Eye_of_Guarm_905
+trinket1=,id=142506,bonus_id=,ilevel=905
+
+copy=Eye_of_Guarm_910
+trinket1=,id=142506,bonus_id=,ilevel=910
+
+copy=Eye_of_Guarm_915
+trinket1=,id=142506,bonus_id=,ilevel=915
+
+copy=Eye_of_Guarm_920
+trinket1=,id=142506,bonus_id=,ilevel=920
+
+copy=Eye_of_Guarm_925
+trinket1=,id=142506,bonus_id=,ilevel=925
 
 copy=Fearless_Gladiators_Badge_of_Conquest_865
 trinket1=,id=142660,bonus_id=,ilevel=865
-chest=
 
 copy=Fearless_Gladiators_Badge_of_Conquest_870
 trinket1=,id=142660,bonus_id=,ilevel=870
@@ -2702,6 +2423,45 @@ trinket1=,id=142888,bonus_id=,ilevel=920
 
 copy=Fearless_Combatants_Insignia_of_Conquest_925
 trinket1=,id=142888,bonus_id=,ilevel=925
+
+copy=Kiljaedens_Burning_Wish_865
+trinket1=,id=144259,bonus_id=,ilevel=865
+
+copy=Kiljaedens_Burning_Wish_870
+trinket1=,id=144259,bonus_id=,ilevel=870
+
+copy=Kiljaedens_Burning_Wish_875
+trinket1=,id=144259,bonus_id=,ilevel=875
+
+copy=Kiljaedens_Burning_Wish_880
+trinket1=,id=144259,bonus_id=,ilevel=880
+
+copy=Kiljaedens_Burning_Wish_885
+trinket1=,id=144259,bonus_id=,ilevel=885
+
+copy=Kiljaedens_Burning_Wish_890
+trinket1=,id=144259,bonus_id=,ilevel=890
+
+copy=Kiljaedens_Burning_Wish_895
+trinket1=,id=144259,bonus_id=,ilevel=895
+
+copy=Kiljaedens_Burning_Wish_900
+trinket1=,id=144259,bonus_id=,ilevel=900
+
+copy=Kiljaedens_Burning_Wish_905
+trinket1=,id=144259,bonus_id=,ilevel=905
+
+copy=Kiljaedens_Burning_Wish_910
+trinket1=,id=144259,bonus_id=,ilevel=910
+
+copy=Kiljaedens_Burning_Wish_915
+trinket1=,id=144259,bonus_id=,ilevel=915
+
+copy=Kiljaedens_Burning_Wish_920
+trinket1=,id=144259,bonus_id=,ilevel=920
+
+copy=Kiljaedens_Burning_Wish_925
+trinket1=,id=144259,bonus_id=,ilevel=925
 
 copy=Stat_Stick_Crit_865
 trinket1=,id=134203,bonus_id=603,ilevel=865
