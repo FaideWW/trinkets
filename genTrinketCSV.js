@@ -1,7 +1,8 @@
 const argv = require('yargs');
 const fs = require('fs');
 const readline = require('readline');
-const { _: newFiles, i: initialDataFile, o: outputFile = 'output.csv' } = argv.argv; 
+const _ = require('lodash');
+const { _: newFiles, i: initialDataFile, o: outputFile = 'output.csv' } = argv.argv;
 
 console.log('Producing CSV');
 console.log('Initial file: ', initialDataFile);
@@ -41,20 +42,26 @@ function fillInNewData(data, filename) {
   const lineReact = readline.createInterface({ input: fs.createReadStream(filename) });
 
   // const regex = / ([0-9]+)   ([0-9.%]+)  ([A-Za-z_]+)(?:_([0-9]+)(_Chest)?)?/g;
-  const regex = / ([0-9]+)   [0-9.%]+  ([A-Za-z_]+)_?([0-9]+)?(_Chest)?/g;
+  const regex = / ([0-9]+)   [0-9.%]+  ([A-Za-z_]+)_?([0-9]+)?(_Chest)?/;
 
   return new Promise((resolve, reject) => {
+    let currentLine = 1;
+    let unmatchedLines = 0;
+    let replacedLines = 0;
     lineReact.on('line', (line) => {
       const result = regex.exec(line);
       if (result) {
         let [fullStr, dps, name, ilvl, hasChest] = result;
+
+        dps = Number(dps);
         if (name[name.length - 1] === '_') { name = name.slice(0, -1); }
+        hasChest = hasChest == '_Chest';
 
         const uniqueID = getUniqueID(name, ilvl, hasChest);
-        console.log(fullStr);
 
         if (data[uniqueID]) {
-          console.log(`replacing ${uniqueID} - old value: ${data[uniqueID].dps} - new value: ${dps}`);
+          replacedLines++;
+          // console.log(`replacing ${uniqueID} - old value: ${data[uniqueID].dps} - new value: ${dps}`);
         }
 
         data[uniqueID] = {
@@ -64,10 +71,18 @@ function fillInNewData(data, filename) {
           ilvl,
           hasChest,
         };
+      } else {
+        unmatchedLines++;
+        console.log(`Warning: line ${currentLine} was not matched:`, line);
       }
+
+      currentLine++;
     });
 
     lineReact.on('close', () => {
+      const percentageUnmatched = (unmatchedLines / (currentLine - 1)) * 100;
+      const percentageReplaced = (replacedLines / (currentLine - 1)) * 100;
+      console.log(`Reached file end: ${unmatchedLines} unmatched lines (${percentageUnmatched.toFixed(2)}%) - ${replacedLines} replaced lines (${percentageReplaced.toFixed(2)}%)`);
       resolve(data);
     });
   });
@@ -75,19 +90,27 @@ function fillInNewData(data, filename) {
 
 function writeCSVToFile(data) {
 
+  const sortedData = _.sortBy(data, entry => entry.dps).reverse();
 
-  let csvOutput = 'dps,trinketname,ilevel,chestbonus\n';
+  const csv = sortedData.reduce((output, entry) => {
+    const { dps, name, ilvl, hasChest } = entry;
 
-  for (let uniqueID in data) {
-    if (!data.hasOwnProperty(uniqueID)) continue;
-
-    const { dps, name, ilvl, hasChest } = data[uniqueID];
-    
     const line = `${dps},${name},${ilvl},${!!hasChest}`;
-    csvOutput += line + '\n';
-  }
+    return output + line + '\n';
+  }, 'dps,trinketname,ilevel,chestbonus\n');
 
-  fs.writeFileSync(outputFile, csvOutput);
+  // let csvOutput = 'dps,trinketname,ilevel,chestbonus\n';
+
+  // for (let uniqueID in data) {
+  //   if (!data.hasOwnProperty(uniqueID)) continue;
+
+  //   const { dps, name, ilvl, hasChest } = data[uniqueID];
+
+  //   const line = `${dps},${name},${ilvl},${!!hasChest}`;
+  //   csvOutput += line + '\n';
+  // }
+
+  fs.writeFileSync(outputFile, csv);
   return true;
 }
 
@@ -102,18 +125,18 @@ function readInitialData(resolve, reject) {
     console.log('No initial file supplied; starting with empty dataset');
     return resolve(initialData);
   }
-  
+
   const lineReact = readline.createInterface({ input: fs.createReadStream(initialDataFile) });
 
   lineReact.on('line', (line) => {
     const [dps, name, ilvl, hasChest] = line.split(',');
     if (Number.isNaN(Number(dps))) return;
     count++;
-    const uniqueID = getUniqueID(name, ilvl, hasChest)
+    const uniqueID = getUniqueID(name, ilvl, hasChest);
     initialData[uniqueID] = {
-      dps: Number(dps), 
-      name, 
-      ilvl, 
+      dps: Number(dps),
+      name,
+      ilvl,
       hasChest: hasChest == 'true',
     };
   });
